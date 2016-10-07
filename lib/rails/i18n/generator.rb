@@ -8,6 +8,10 @@ module Rails
       class Railtie < ::Rails::Railtie
         config.rails_i18n_generator = Rails::I18n::Generator::Configuration.new(false)
 
+        initializer :rails_i18n do
+          config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+        end
+
         generators do |app|
           if ::Rails::VERSION::STRING >= '3.2'
             Rails::Generators.configure!(app.config.generators)

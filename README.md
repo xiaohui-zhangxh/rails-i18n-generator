@@ -34,11 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-Make sure you have something like this in application.rb:
-
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
-
-Then below command will generate locale files properly
+Below commands will generate locale files properly
 
     $ rails g scaffold Article title:string body:text
     $ rails g model Article title:string body:text

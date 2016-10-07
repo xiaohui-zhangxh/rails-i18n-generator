@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["xiaohui@zhangxh.net"]
   spec.summary       = %q{Generate locales for models and controlers}
   spec.description   = %q{This gem is re-built from gem i18n_yaml_generator}
-  spec.homepage      = "http://github.com/xiaohui-zhangxh/rails-i18n-generatorREADME.md"
+  spec.homepage      = "http://github.com/xiaohui-zhangxh/rails-i18n-generator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
